@@ -145,6 +145,9 @@
   <h2>📝 Bài viết</h2>
   <p class="credit">✍️ Ở các Bài viết này, nếu không nói gì thêm thì Bài viết được chấp bút bởi Con bò Lớp trưởng 9A6</p>
 
+  <!-- BẮT ĐẦU -->
+  <div id="posts">
+
   <!-- Post 1 -->
   <div class="post">
     <h3>🔥 CHÍNH THỨC THÀNH LẬP TIKTOK LỚP 9A6 🔥</h3>
@@ -512,6 +515,8 @@
     vẫn ồn, vẫn lầy, nhưng đang cố gắng trưởng thành hơn từng chút một 💙
   </p>
 </div>
+  </div>
+  <div id="pagination"></div>
 
 
 
@@ -695,5 +700,47 @@
     <br><br>
     <small>© 2025 <b>9A6 · Rinelle</b>. All rights reserved.</small>
   </footer>
+  <script>
+  const postsPerPage = 3; // mỗi trang 3 bài
+  let currentPage = 1;
+
+  const postsContainer = document.getElementById("posts");
+  const pagination = document.getElementById("pagination");
+  const posts = Array.from(postsContainer.children);
+
+  function showPage(page) {
+    currentPage = page;
+    const start = (page - 1) * postsPerPage;
+    const end = start + postsPerPage;
+
+    posts.forEach(p => p.style.display = "none");
+    posts.slice(start, end).forEach(p => p.style.display = "block");
+
+    renderPagination();
+  }
+
+  function renderPagination() {
+    pagination.innerHTML = "";
+    const pageCount = Math.ceil(posts.length / postsPerPage);
+
+    for (let i = 1; i <= pageCount; i++) {
+      const btn = document.createElement("button");
+      btn.innerText = i;
+      btn.style.margin = "5px";
+      btn.style.padding = "6px 12px";
+      btn.style.borderRadius = "8px";
+      btn.style.border = "none";
+      btn.style.cursor = "pointer";
+      btn.style.background = i === currentPage ? "#ff4d6d" : "#ffccd5";
+      btn.style.color = i === currentPage ? "white" : "#333";
+
+      btn.onclick = () => showPage(i);
+      pagination.appendChild(btn);
+    }
+  }
+
+  showPage(1);
+</script>
+
 </body>
                                 </html>
