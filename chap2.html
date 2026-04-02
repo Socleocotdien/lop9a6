@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Chap 2 - </title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to bottom, #f4f8fb, #e0f0ff);
+      padding: 30px;
+      line-height: 1.8;
+    }
+    .container {
+      max-width: 700px;
+      margin: auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #2c3e50;
+    }
+    p {
+      margin-bottom: 15px;
+    }
+    .back {
+      margin-top: 20px;
+      display: inline-block;
+      color: #0077cc;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+<div class="container">
+  <h1> Chap 2: </h1>
+
+  
+
+  <a class="back" href="index.html">← Quay lại trang chính</a>
+  <a href="chap1.html">← Chap trước</a>
+  <a href="chap3.html">Chap sau →</a>
+</div>
+
+<script>
+setInterval(() => {
+  const snow = document.createElement("div");
+  snow.innerText = "❄️";
+  snow.style.position = "fixed";
+  snow.style.left = Math.random() * window.innerWidth + "px";
+  snow.style.top = "-10px";
+  snow.style.fontSize = "14px";
+  document.body.appendChild(snow);
+
+  let fall = setInterval(() => {
+    snow.style.top = parseInt(snow.style.top) + 5 + "px";
+    if (parseInt(snow.style.top) > window.innerHeight) {
+      clearInterval(fall);
+      snow.remove();
+    }
+  }, 50);
+}, 300);
+</script>
+
+</body>
+</html>
