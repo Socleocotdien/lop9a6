@@ -57,6 +57,25 @@
   <p>...</p>
 
   <p><b>Một tình bạn nồng thắm... và cũng đầy "mùi vị" bắt đầu từ đây.</b></p>
+  <script>
+setInterval(() => {
+  const snow = document.createElement("div");
+  snow.innerText = "❄️";
+  snow.style.position = "fixed";
+  snow.style.left = Math.random() * window.innerWidth + "px";
+  snow.style.top = "-10px";
+  snow.style.fontSize = "14px";
+  document.body.appendChild(snow);
+
+  let fall = setInterval(() => {
+    snow.style.top = parseInt(snow.style.top) + 5 + "px";
+    if (parseInt(snow.style.top) > window.innerHeight) {
+      clearInterval(fall);
+      snow.remove();
+    }
+  }, 50);
+}, 300);
+</script>
 
   <a class="back" href="index.html">← Quay lại trang chính</a>
 </div>
