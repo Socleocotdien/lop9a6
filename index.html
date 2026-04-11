@@ -123,7 +123,6 @@
     <a href="#baiviet">Bài viết</a>
     <a href="#thongbao">Thông báo</a>
     <a href="#members">Thành viên</a>
-     <a href="#story">Truyện</a>
   </nav>
 
 
@@ -623,42 +622,6 @@
 
 
 
-
-</section>
-
-<section id="story" style="margin: 30px;">
-  <h2>📖 Series truyện 9A6</h2>
-
-  <p style="background: #fff; padding: 15px; border-radius: 10px; line-height: 1.6;">
-    ✍️ <b>Tác giả:</b> Những tâm hồn đam mê tình anh em cảm động của lớp 9A6 =)))<br><br>
-
-    📚 Đây là series truyện học đường do chính học sinh lớp 9A6 sáng tác, 
-    nơi hội tụ những câu chuyện vừa hài hước và gay 
-    và đôi khi hơi lạnh do có hiện tượng tuyết rơi bất thường ở đâu đó ❄️<br><br>
-
-    🔔 Truyện sẽ được cập nhật thường xuyên, nên nhớ ghé lại để hóng những diễn biến mới nhất nha!
-  </p>
-
-  <div style="background: white; padding: 15px; border-radius: 10px; margin-top: 10px;">
-    <h3>❄️ Chap 1: Mùa đông ở bàn cuối</h3>
-    <p>
-      Ngày đầu tiên của lớp 9A6… một cơn bão tuyết kỳ lạ đã xuất hiện ở bàn cuối.
-    </p>
-    <a href="chap1.html" style="color: #ff4d6d; font-weight: bold;">
-      👉 Đọc ngay
-      <div style="background: white; padding: 15px; border-radius: 10px; margin-top: 10px;">
-  <h3>❄️ Chap 2: (tên chap)</h3>
-  <p>Mô tả</p>
-  <a href="chap2.html" style="color: #ff4d6d; font-weight: bold;">
-    👉 Đọc ngay
-  </a>
-</div>
-    </a>
-  </div>
-</section>
-
-
-
     <!-- Thông báo -->
     <section id="thongbao" class="card">
       <h2>📢 Thông báo</h2>
@@ -684,21 +647,22 @@
       </ul>
     </section>
 
-    <!-- Danh sách lớp -->
-    <section id="members" class="card">
-      <h2>👥 Thành viên lớp 9A6</h2>
-     <h2 style="text-align:center;">🌟 Cô chủ nhiệm và các Thành viên tiêu biểu của lớp 9A6 🌟</h2>
+  <!-- Danh sách lớp -->
+<section id="members" class="card">
+  <h2>👥 Thành viên lớp 9A6</h2>
+  <h2 style="text-align:center;">🌟 Cô chủ nhiệm và các Thành viên tiêu biểu của lớp 9A6 🌟</h2>
 
-<ul class="leaders">
-  <li onclick="showDesc('lan')">👩‍🏫 Nguyễn Thị Lan – Giáo viên chủ nhiệm</li>
-  <li onclick="showDesc('nhi')">📌 Nguyễn Viết Xuân Nhi – Chi đội trưởng</li>
-  <li onclick="showDesc('nhadan')">📌 Hồ Nguyễn Nhã Đan – Lớp phó học tập</li>
-  <li onclick="showDesc('minh')">📌 Bùi Lê Quang Minh – Uỷ viên BCH Liên đội</li>
-  <li onclick="showDesc('linh')">📌 Nguyễn Phương Linh – Bí thư chi đội</li>
-  <li onclick="showDesc('long')">📌 Đặng Bảo An – Lớp trưởng</li>
-</ul>
+  <ul class="leaders">
+    <li onclick="showDesc('lan')">👩‍🏫 Nguyễn Thị Lan – Giáo viên chủ nhiệm</li>
+    <li onclick="showDesc('nhi')">📌 Nguyễn Viết Xuân Nhi – Chi đội trưởng</li>
+    <li onclick="showDesc('nhadan')">📌 Hồ Nguyễn Nhã Đan – Lớp phó học tập</li>
+    <li onclick="showDesc('minh')">📌 Bùi Lê Quang Minh – Uỷ viên BCH Liên đội</li>
+    <li onclick="showDesc('linh')">📌 Nguyễn Phương Linh – Bí thư chi đội</li>
+    <li onclick="showDesc('long')">📌 Đặng Bảo An – Lớp trưởng</li>
+  </ul>
+</section>
 
-<!-- Popup khung -->
+<!-- Popup -->
 <div id="popup" class="popup">
   <div class="popup-content">
     <span class="close" onclick="closePopup()">&times;</span>
@@ -707,63 +671,72 @@
 </div>
 
 <style>
-  ul.leaders {
-    list-style: none;
-    padding: 0;
-    max-width: 500px;
-    margin: 20px auto;
-  }
-  ul.leaders li {
-    background: #ffccdd;
-    margin: 8px 0;
-    padding: 12px;
-    cursor: pointer;
-    border-radius: 10px;
-    font-weight: bold;
-    transition: 0.2s;
-  }
-  ul.leaders li:hover {
-    background: #ff99b3;
-  }
+ul.leaders {
+  list-style: none;
+  padding: 0;
+  max-width: 500px;
+  margin: 20px auto;
+}
+ul.leaders li {
+  background: #ffccdd;
+  margin: 8px 0;
+  padding: 12px;
+  cursor: pointer;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: 0.2s;
+}
+ul.leaders li:hover {
+  background: #ff99b3;
+}
 
-  .popup {
-    display: none;
-    position: fixed;
-    z-index: 1000;
-    left: 0; top: 0;
-    width: 100%; height: 100%;
-    background: rgba(0,0,0,0.5);
-  }
-  .popup-content {
-    background: #fff;
-    margin: 10% auto;
-    padding: 20px;
-    border-radius: 12px;
-    width: 80%;
-    max-width: 600px;
-    animation: fadeIn 0.3s ease;
-  }
-  .close {
-    float: right;
-    font-size: 24px;
-    cursor: pointer;
-    color: #ff4d6d;
-  }
-  @keyframes fadeIn {
-    from {opacity: 0; transform: scale(0.9);}
-    to {opacity: 1; transform: scale(1);}
-  }
+.popup {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.popup-content {
+  background: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 12px;
+  width: 80%;
+  max-width: 600px;
+  animation: fadeIn 0.3s ease;
+}
+.close {
+  float: right;
+  font-size: 24px;
+  cursor: pointer;
+  color: #ff4d6d;
+}
+@keyframes fadeIn {
+  from {opacity: 0; transform: scale(0.9);}
+  to {opacity: 1; transform: scale(1);}
+}
 </style>
 
-  };
-</script>
-  function showDesc(name) {
-    document.getElementById("popup-text").innerHTML = data[name];
-    document.getElementById("popup").style.display = "block";
-  }
-  function closePopup() {
-    document.getElementById("popup").style.display = "none";
-  }
+<script>
+const data = {
+  lan: "no data 💖",
+  nhi: "no data 🌟",
+  nhadan: "no data 📚",
+  minh: "no data 🔥",
+  linh: "no data 💫",
+  long: "no data 😎"
+};
+
+function showDesc(name) {
+  document.getElementById("popup-text").innerHTML = data[name];
+  document.getElementById("popup").style.display = "block";
+}
+
+function closePopup() {
+  document.getElementById("popup").style.display = "none";
+}
 </script>
 
       <table>
@@ -780,46 +753,46 @@
           <tr><td>2</td><td>Nguyễn Châu Anh</td><td>29/06/2011</td><td>Nữ</td></tr>
           <tr><td>3</td><td>Trần Ngọc Phương Anh</td><td>28/11/2011</td><td>Nữ</td></tr>
           <tr><td>4</td><td>Võ Phúc Minh Anh</td><td>15/04/2011</td><td>Nam</td></tr>
-          <tr><td>5</td><td>Phạm Gia Bảo</td><td>17/11/2011</td><td>Nam</td></tr>
-          <tr><td>6</td><td>Huỳnh Nguyên Ngọc Bích</td><td>29/07/2011</td><td>Nữ</td></tr>
-          <tr><td>7</td><td>Nguyễn Ngọc Minh Cường</td><td>26/02/2011</td><td>Nam</td></tr>
-          <tr><td>8</td><td>Hồ Nguyễn Nhã Đan</td><td>13/03/2011</td><td>Nữ</td></tr>
-          <tr><td>9</td><td>Trần Minh Đăng</td><td>04/08/2011</td><td>Nam</td></tr>
-          <tr><td>10</td><td>Mai Gia Hân</td><td>22/05/2011</td><td>Nữ</td></tr>
-          <tr><td>11</td><td>Nguyễn Thị Ngọc Hân</td><td>14/09/2011</td><td>Nữ</td></tr>
-          <tr><td>12</td><td>Nguyễn Thị Thuý Hiền</td><td>04/10/2011</td><td>Nữ</td></tr>
-          <tr><td>13</td><td>Phan Trọng Hiếu</td><td>06/11/2011</td><td>Nam</td></tr>
-          <tr><td>14</td><td>Nguyễn Phạm Gia Huy</td><td>16/05/2011</td><td>Nam</td></tr>
-          <tr><td>15</td><td>Nguyễn Quốc Huy</td><td>12/07/2011</td><td>Nam</td></tr>
-          <tr><td>16</td><td>Nguyễn Văn Gia Huy</td><td>03/09/2011</td><td>Nam</td></tr>
-          <tr><td>17</td><td>Phù Hồng Gia Huy</td><td>19/12/2011</td><td>Nam</td></tr>
-          <tr><td>18</td><td>Trần Thị Thu Huyền</td><td>09/02/2011</td><td>Nữ</td></tr>
-          <tr><td>19</td><td>Đinh Trương Thiên Khải</td><td>06/01/2011</td><td>Nam</td></tr>
-          <tr><td>20</td><td>Nguyễn Hiền Phương Khôi</td><td>09/12/2011</td><td>Nữ</td></tr>
-          <tr><td>21</td><td>Trần Thị Hoa Lan</td><td>18/06/2011</td><td>Nữ</td></tr>
-          <tr><td>22</td><td>Nguyễn Ngọc Khánh Linh</td><td>11/02/2011</td><td>Nữ</td></tr>
-          <tr><td>23</td><td>Nguyễn Phương Linh</td><td>18/10/2011</td><td>Nữ</td></tr>
-          <tr><td>24</td><td>Võ Trần Khánh Linh</td><td>01/08/2011</td><td>Nữ</td></tr>
-          <tr><td>25</td><td>Nguyễn Hoàng Nhật Long</td><td>05/05/2011</td><td>Nam</td></tr>
-          <tr><td>26</td><td>Ngô Văn Tấn Lợi</td><td>10/02/2011</td><td>Nam</td></tr>
-          <tr><td>27</td><td>Bùi Lê Quang Minh</td><td>27/03/2011</td><td>Nam</td></tr>
-          <tr><td>28</td><td>Lê Bảo Nam</td><td>24/05/2011</td><td>Nam</td></tr>
-          <tr><td>29</td><td>Đặng Đăng Nguyên</td><td>15/08/2011</td><td>Nam</td></tr>
-          <tr><td>30</td><td>Nguyễn Thiện Nhân</td><td>18/07/2011</td><td>Nam</td></tr>
-          <tr><td>31</td><td>Nguyễn Viết Xuân Nhi</td><td>29/01/2011</td><td>Nữ</td></tr>
-          <tr><td>32</td><td>Lê Văn Gia Phong</td><td>19/11/2011</td><td>Nam</td></tr>
-          <tr><td>33</td><td>Huỳnh Văn Tiến Sơn</td><td>21/11/2011</td><td>Nam</td></tr>
-          <tr><td>34</td><td>Phạm Tấn</td><td>30/06/2011</td><td>Nam</td></tr>
-          <tr><td>35</td><td>Hồ Phạm Minh Thảo</td><td>13/06/2011</td><td>Nữ</td></tr>
-          <tr><td>36</td><td>Trần Vĩnh Thông</td><td>28/01/2011</td><td>Nam</td></tr>
-          <tr><td>37</td><td>Trần Ngọc Minh Thư</td><td>21/03/2011</td><td>Nữ</td></tr>
-          <tr><td>38</td><td>Nguyễn Ngọc Bảo Trâm</td><td>05/09/2011</td><td>Nữ</td></tr>
-          <tr><td>39</td><td>Lê Bảo Trân</td><td>24/05/2011</td><td>Nữ</td></tr>
-          <tr><td>40</td><td>Lê Bảo Trân</td><td>06/03/2011</td><td>Nam</td></tr>
-          <tr><td>41</td><td>Nguyễn Bảo Trọng</td><td>28/03/2011</td><td>Nam</td></tr>
-          <tr><td>42</td><td>Lê Khánh Uyên</td><td>24/04/2011</td><td>Nữ</td></tr>
-          <tr><td>43</td><td>Đậu Quang Vinh</td><td>01/04/2011</td><td>Nam</td></tr>
-          <tr><td>44</td><td>Nguyễn Hoàng Khánh Vy</td><td>01/04/2011</td><td>Nữ</td></tr>
+          <tr><td>5</td><td>Lê Văn Gia Bảo</td><td>19/11/2011</td><td>Nam</td></tr>
+          <tr><td>6</td><td>Phạm Gia Bảo</td><td>17/11/2011</td><td>Nam</td></tr>
+          <tr><td>7</td><td>Huỳnh Nguyên Ngọc Bích</td><td>29/07/2011</td><td>Nữ</td></tr>
+          <tr><td>8</td><td>Nguyễn Ngọc Minh Cường</td><td>26/02/2011</td><td>Nam</td></tr>
+          <tr><td>9</td><td>Hồ Nguyễn Nhã Đan</td><td>13/03/2011</td><td>Nữ</td></tr>
+          <tr><td>10</td><td>Trần Minh Đăng</td><td>04/08/2011</td><td>Nam</td></tr>
+          <tr><td>11</td><td>Mai Gia Hân</td><td>22/05/2011</td><td>Nữ</td></tr>
+          <tr><td>12</td><td>Nguyễn Thị Ngọc Hân</td><td>14/09/2011</td><td>Nữ</td></tr>
+          <tr><td>13</td><td>Nguyễn Thị Thuý Hiền</td><td>04/10/2011</td><td>Nữ</td></tr>
+          <tr><td>14</td><td>Phan Trọng Hiếu</td><td>06/11/2011</td><td>Nam</td></tr>
+          <tr><td>15</td><td>Nguyễn Phạm Gia Huy</td><td>16/05/2011</td><td>Nam</td></tr>
+          <tr><td>16</td><td>Nguyễn Quốc Huy</td><td>12/07/2011</td><td>Nam</td></tr>
+          <tr><td>17</td><td>Nguyễn Văn Gia Huy</td><td>03/09/2011</td><td>Nam</td></tr>
+          <tr><td>18</td><td>Phù Hồng Gia Huy</td><td>19/12/2011</td><td>Nam</td></tr>
+          <tr><td>19</td><td>Trần Thị Thu Huyền</td><td>09/02/2010</td><td>Nữ</td></tr>
+          <tr><td>20</td><td>Đinh Trương Thiên Khải</td><td>06/01/2011</td><td>Nam</td></tr>
+          <tr><td>21</td><td>Nguyễn Hiền Phương Khôi</td><td>09/12/2011</td><td>Nữ</td></tr>
+          <tr><td>22</td><td>Trần Thị Hoa Lan</td><td>18/06/2011</td><td>Nữ</td></tr>
+          <tr><td>23</td><td>Nguyễn Ngọc Khánh Linh</td><td>11/02/2011</td><td>Nữ</td></tr>
+          <tr><td>24</td><td>Nguyễn Phương Linh</td><td>18/10/2011</td><td>Nữ</td></tr>
+          <tr><td>25</td><td>Võ Trần Khánh Linh</td><td>01/08/2011</td><td>Nữ</td></tr>
+          <tr><td>26</td><td>Nguyễn Hoàng Nhật Long</td><td>05/05/2011</td><td>Nam</td></tr>
+          <tr><td>27</td><td>Ngô Văn Tấn Lợi</td><td>10/02/2011</td><td>Nam</td></tr>
+          <tr><td>28</td><td>Bùi Lê Quang Minh</td><td>27/03/2011</td><td>Nam</td></tr>
+          <tr><td>29</td><td>Lê Bảo Nam</td><td>24/05/2011</td><td>Nam</td></tr>
+          <tr><td>30</td><td>Đặng Đăng Nguyên</td><td>15/08/2011</td><td>Nam</td></tr>
+          <tr><td>31</td><td>Nguyễn Thiện Nhân</td><td>18/07/2011</td><td>Nam</td></tr>
+          <tr><td>32</td><td>Nguyễn Viết Xuân Nhi</td><td>29/01/2011</td><td>Nữ</td></tr>
+          <tr><td>33</td><td>Lê Văn Gia Phong</td><td>19/11/2011</td><td>Nam</td></tr>
+          <tr><td>34</td><td>Huỳnh Văn Tiến Sơn</td><td>21/11/2011</td><td>Nam</td></tr>
+          <tr><td>35</td><td>Phạm Tấn</td><td>30/06/2011</td><td>Nam</td></tr>
+          <tr><td>36</td><td>Hồ Phạm Minh Thảo</td><td>13/06/2011</td><td>Nữ</td></tr>
+          <tr><td>37</td><td>Trần Vĩnh Thông</td><td>28/01/2011</td><td>Nam</td></tr>
+          <tr><td>38</td><td>Trần Ngọc Minh Thư</td><td>21/03/2011</td><td>Nữ</td></tr>
+          <tr><td>39</td><td>Nguyễn Ngọc Bảo Trâm</td><td>05/09/2011</td><td>Nữ</td></tr>
+          <tr><td>40</td><td>Lê Bảo Trân</td><td>24/05/2011</td><td>Nữ</td></tr>
+          <tr><td>41</td><td>Nguyễn Bảo Trọng</td><td>06/03/2011</td><td>Nam</td></tr>
+          <tr><td>42</td><td>Lê Khánh Uyên</td><td>28/03/2011</td><td>Nam</td></tr>
+          <tr><td>43</td><td>Đậu Quang Vinh</td><td>24/04/2011</td><td>Nữ</td></tr>
+          <tr><td>44</td><td>Nguyễn Hoàng Khánh Vy</td><td>01/04/2011</td><td>Nam</td></tr>
         </tbody>
       </table>
     </section>
